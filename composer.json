@@ -1,0 +1,44 @@
+{
+    "name": "r3bzya/openapi-testing",
+    "description": "This package allows you to integrate the specification validation into the flow of tests",
+    "homepage": "https://github.com/R3bzya/openapi-testing",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "testing"
+    ],
+    "require": {
+        "php": "^8.2",
+        "osteel/openapi-httpfoundation-testing": "^0.10",
+        "laravel/laravel": "^10.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.17",
+        "phpunit/phpunit": "^10.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "R3bzya\\OpenApiTesting\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "R3bzya\\OpenApiTesting\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": [
+            "vendor/bin/phpunit"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Aleksey R3bzya Yakushev",
+            "email": "r3bzya@gmail.com",
+            "homepage": "https://github.com/R3bzya",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
